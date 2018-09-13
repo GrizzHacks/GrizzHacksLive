@@ -1,0 +1,54 @@
+.topnav {
+	background: linear-gradient(90deg, #1B5E20 , #00E676);
+}
+
+.topnav h2 {
+	font-size: 2rem;
+	margin-bottom: .5rem;
+	font-weight: 500;
+	line-height: 1.1;
+	margin-top: 0;
+}
+
+.navbar-brand-white-text {
+		color: #fff !important;
+}
+
+#timer {
+	margin-top: 3.5rem;
+}
+
+#buttons {
+	margin-top: 2.5rem;
+}
+
+button {
+	margin: .5rem;
+}
+
+.time {
+	font-size: 5rem !important;
+	line-height: 40px;
+	color: #000;
+}
+
+#challenges, #schedule {
+	width: 75vw;
+	margin-top: 3rem;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 1rem;
+}
+
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important; 
+}
+
+#scheduleList, #challengeList {
+	max-height: 500px;
+	overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+}
