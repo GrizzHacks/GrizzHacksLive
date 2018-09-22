@@ -25,6 +25,10 @@ var x = setInterval(function() {
 	if(now > hackingStarts) {
 		distance = now - hackingEnds.getTime();
 	}
+	
+	if(distance < 0)  {
+		distance *= -1;
+	}
 
 	var hours = Math.floor((distance / (1000 * 60 * 60)));
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
