@@ -45,12 +45,13 @@ var x = setInterval(function() {
 }, 1000);
 
 /* Schedule */
+/*
 db.collection("scheduleItems").orderBy("order").get().then((querySnapshot) => {
 		querySnapshot.forEach((doc) => {
 			$("#scheduleList").append(createScheduleItem(doc.data()));
 		});
 });
-
+*/
 function createScheduleItem(scheduleItem) {
 	return '<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">' + 
 				'<div class="d-flex w-100 justify-content-between">' +
