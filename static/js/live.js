@@ -37,9 +37,9 @@ var x = setInterval(function() {
 	var textModifier = "";
 
 	if(now < hackingStarts) {
-		textModifier = "until hacking starts"
+		textModifier = "until hacking starts."
 	} else if(now < hackingEnds && now > hackingStarts) {
-		textModifier = "until hacking ends"
+		textModifier = "until hacking ends."
 	} else if(now > hackingEnds) {
 		textModifier = "Hacking Ended!"
 	}
