@@ -15,8 +15,8 @@ const settings = { timestampsInSnapshots: true };
 db.settings(settings);
 
 /* Timer */
-var hackingStarts = new Date("Sep 22, 2018 12:00:00");
-var hackingEnds = new Date("Sep 23, 2018 12:00:00");
+var hackingStarts = new Date("Sep 28, 2019 12:00:00");
+var hackingEnds = new Date("Sep 29, 2019 12:00:00");
 
 var x = setInterval(function() {
 	var now = new Date().getTime();
