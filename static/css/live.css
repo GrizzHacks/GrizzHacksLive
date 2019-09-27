@@ -1,5 +1,5 @@
 .topnav {
-	background: linear-gradient(90deg, #1B5E20 , #00E676);
+	background: linear-gradient(90deg, #3A1964 , #813dd9);
 }
 
 .topnav h2 {
@@ -24,6 +24,16 @@
 
 button {
 	margin: .5rem;
+}
+
+.purpleButton {
+	color: #3A1964 !important;
+	background-color: transparent;
+}
+
+.purpleButton:hover {
+	color: white !important;
+	background-color: #3A1964 ;
 }
 
 .time {
