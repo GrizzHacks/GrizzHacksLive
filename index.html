@@ -1,300 +1,144 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-		<link rel="stylesheet" href="static/css/bootstrap.min.css">
-		<link rel="stylesheet" href="static/css/live.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="static/css/live.css" />
 
-		<title>GrizzHacks Live</title>
+    <title>GrizzHacks Live</title>
 
-		<link rel="shortcut icon" href="static/images/favicon-2.png">
+    <link rel="shortcut icon" href="static/images/favicon-2.png" />
+  </head>
+  <body>
+    <nav class="topnav navbar navbar-light bg-light">
+      <a class="navbar-brand navbar-brand-white-text mx-auto" href="#"
+        ><h2>
+          GrizzHacks
+          <span
+            style="
+              background: rgb(255, 0, 0);
+              padding: 3px;
+              font-size: 0.8em;
+              border-radius: 5px;
+            "
+            >Live</span
+          >
+        </h2></a
+      >
+    </nav>
 
-	</head>
-	<body>
+    <div id="timer">
+      <h1 align="center" class="time" id="countdownTimer">
+        <span id="time">00:00</span>
+        <br />
+        <span id="timerAppendedText" style="font-size: 0.5em"
+          >Wait! Don't start hacking just yet!</span
+        >
+      </h1>
+    </div>
 
-		<nav class="topnav navbar navbar-light bg-light">
-			<a class="navbar-brand navbar-brand-white-text mx-auto" href="#"><h2>GrizzHacks <span style="background: rgb(255, 0, 0); padding: 3px; font-size: 0.8em; border-radius: 5px;">Live</span></h2></a>
-		</nav>
+    <!--<div id="buttons" align="center">
+      <a href="https://grizzhacks4.slack.com" target="_blank"
+        ><button
+          type="button"
+          class="purpleButton"
+          class="btn btn-outline-success"
+        >
+          Go To Our Slack
+        </button></a
+      >
+      <a href="http://joingrizzhacks.herokuapp.com/" target="_blank"
+        ><button
+          type="button"
+          class="purpleButton"
+          class="btn btn-outline-success"
+        >
+          Request Slack Invite
+        </button></a
+      >
+      <a href="https://grizzhacks4.devpost.com/" target="_blank"
+        ><button
+          type="button"
+          class="purpleButton"
+          class="btn btn-outline-success"
+        >
+          Devpost
+        </button></a
+      >
+      <a href="https://hardware.mlh.io/" target="_blank"
+        ><button
+          type="button"
+          class="purpleButton"
+          class="btn btn-outline-success"
+        >
+          MLH Hardware Request
+        </button></a
+      >
+      <a href="https://github.com/GrizzHacks/Beginners-Portal" target="_blank"
+        ><button
+          type="button"
+          class="purpleButton"
+          class="btn btn-outline-success"
+        >
+          Beginners Portal
+        </button></a
+      >
+    </div>
 
-		<div id="timer">
-			<h1 align="center" class="time" id="countdownTimer">
-				<span id="time">00:00</span>
-				<br>
-				<span id="timerAppendedText" style="font-size: 0.5em;">Wait! Don't start hacking just yet!</span>
-			</h1>
-		</div>
-
-		<div id="buttons" align="center">
-			<a href="https://grizzhacks4.slack.com" target="_blank"><button type="button" class="purpleButton" class="btn btn-outline-success">Go To Our Slack</button></a>
-			<a href="http://joingrizzhacks.herokuapp.com/" target="_blank"><button type="button" class="purpleButton" class="btn btn-outline-success">Request Slack Invite</button></a>
-			<a href="https://grizzhacks4.devpost.com/" target="_blank"><button type="button" class="purpleButton" class="btn btn-outline-success">Devpost</button></a>
-         <a href="https://hardware.mlh.io/" target="_blank"><button type="button" class="purpleButton" class="btn btn-outline-success">MLH Hardware Request</button></a>
-         <a href="https://github.com/GrizzHacks/Beginners-Portal" target="_blank"><button type="button" class="purpleButton" class="btn btn-outline-success">Beginners Portal</button></a>
-		</div>
-
-		<div id="wifi" align="center">
+    <div id="wifi" align="center">
 			<br>
 			<h4>WiFi Login: GRIZZHACKS</h4>
 			<h4>WiFi Password: grizzhacks2019</h4>
-		</div>
+		</div>-->
 
-		<div id="schedule" class="jumbotron center">
-			<h3>Schedule</h3>
-			<div class="list-group" id="scheduleList">
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Sponsor Registration</h5>
-         <small>Activity</small>
+    <div id="schedule" class="jumbotron center">
+      <h3>Schedule</h3>
+      <div class="list-group" id="scheduleList">
+        <a
+          href="#"
+          class="list-group-item list-group-item-action flex-column align-items-start"
+        >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Opening Ceremony</h5>
+            <small>Activity</small>
+          </div>
+          <p class="mb-1">Starts: Friday 7:00pm</p>
+          <p class="mb-1">Ends: Friday 8:00am</p>
+          <p class="mb-1">Location: Twitch</p>
+        </a>
+        <a
+          href="#"
+          class="list-group-item list-group-item-action flex-column align-items-start"
+        >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">GrizzHacks</h5>
+            <small>Activity</small>
+          </div>
+          <p class="mb-1">Starts: Friday 8:30pm</p>
+          <p class="mb-1">Ends: Sunday 5:00pm</p>
+          <p class="mb-1">GrizzHacks! More info to come soon!</p>
+        </a>
       </div>
-      <p class="mb-1">Starts: Sat 9:00am</p>
-      <p class="mb-1">Ends: Sat 9:30am</p>
-      <p class="mb-1">Location: EC Atrium</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Hacker Registration</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 9:30am</p>
-      <p class="mb-1">Ends: Sat 11:00pm</p>
-      <p class="mb-1">Location: EC Atrium</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Sponsor Expo</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 9:30am</p>
-      <p class="mb-1">Ends: Sat 2:00pm</p>
-      <p class="mb-1">Location: EC Atrium</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Opening Ceremony</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 11:00am</p>
-      <p class="mb-1">Ends: Sat 11:30am</p>
-      <p class="mb-1">Location: EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Team Formation</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 11:30am</p>
-      <p class="mb-1">Ends: Sat 11:45pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Hacking Begins</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 12:00pm</p>
-      <p class="mb-1">Ends: Sun 12:00pm</p>
-      <p class="mb-1">Location: EC All Floors</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Andrew Dimmer: Version Control (Github) and Hackathon Project Planning for Beginner and Expert Hackers</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 12:00pm</p>
-      <p class="mb-1">Ends: Sat 1:00pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">MongoDB: IoT with JS (?!?!) - A Gentle Introduction to IoT</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 12:15pm</p>
-      <p class="mb-1">Ends: Sat 1:15pm</p>
-      <p class="mb-1">Location: EC 281</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Lunch</h5>
-         <small>Food</small>
-      </div>
-      <p class="mb-1">Starts: Sat 1:00pm</p>
-      <p class="mb-1">Ends: Sat 2:30pm</p>
-      <p class="mb-1">Location: In front of EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Red Ventures: Why Theory Matters using Idris</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 2:00pm</p>
-      <p class="mb-1">Ends: Sat 2:30pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Red Ventures: How to Not Suck as a Team Member</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 2:30pm</p>
-      <p class="mb-1">Ends: Sat 3:00pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">OUCU: APIs: What are They and How to Use Them?</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 2:45pm</p>
-      <p class="mb-1">Ends: Sat 3:15pm</p>
-      <p class="mb-1">Location: EC 281</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Dynatrace: Why UX is Important Through Software Development</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 3:15pm</p>
-      <p class="mb-1">Ends: Sat 4:15pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Little Caesars: IF YOU CAN MEASURE IT YOU CAN MANAGE IT: How Data and Analytics are Driving Today’s Business Decisions.</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 4:30pm</p>
-      <p class="mb-1">Ends: Sat 5:30pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">MLH Event - Werewolf</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sat 5:30pm</p>
-      <p class="mb-1">Ends: Sat 6:00pm</p>
-      <p class="mb-1">Location: EC Atrium</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Dinner</h5>
-         <small>Food</small>
-      </div>
-      <p class="mb-1">Starts: Sat 6:00pm</p>
-      <p class="mb-1">Ends: Sat 8:00pm</p>
-      <p class="mb-1">Location: In front of EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-	 <h5 class="mb-1">Light Guide Systems: Real-World Challenges Deploying Industrial Augmented Reality Solutions - How to Avoid Becoming the Precipitate</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 7:00pm</p>
-      <p class="mb-1">Ends: Sat 8:00pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-	 <h5 class="mb-1">Atomic Object: What do You Want Your Career to do For You?</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 8:15pm</p>
-      <p class="mb-1">Ends: Sat 9:00pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Adam McNeilly: Introduction To Android Development</h5>
-         <small>Tech Talk</small>
-      </div>
-      <p class="mb-1">Starts: Sat 9:30pm</p>
-      <p class="mb-1">Ends: Sat 10:30pm</p>
-      <p class="mb-1">Location: EC 254</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Snack'n'Stack</h5>
-         <small>Food</small>
-      </div>
-      <p class="mb-1">Starts: Sun 11:15pm</p>
-      <p class="mb-1">Ends: Sun 12:00am</p>
-      <p class="mb-1">Location: EC Attrium</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Breakfast</h5>
-         <small>Food</small>
-      </div>
-      <p class="mb-1">Starts: Sun 8:00am</p>
-      <p class="mb-1">Ends: Sun 9:30am</p>
-      <p class="mb-1">Location: In front of EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Submit Hacks to Devpost</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sun 11:00am</p>
-      <p class="mb-1">Ends: Sun 12:00am</p>
-      <p class="mb-1">Location: Online</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Hacking Ends</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sun 12:00pm</p>
-      <p class="mb-1">Ends: Sun 12:00pm</p>
-      <p class="mb-1">Location: EC All Floors</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Lunch</h5>
-         <small>Food</small>
-      </div>
-      <p class="mb-1">Starts: Sun 12:15pm</p>
-      <p class="mb-1">Ends: Sun 1:00pm</p>
-      <p class="mb-1">Location: In front of EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Demos</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sun 1:00pm</p>
-      <p class="mb-1">Ends: Sun 3:00pm</p>
-      <p class="mb-1">Location: EC 116</p>
-   </a>
-   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-         <h5 class="mb-1">Closing Ceremony</h5>
-         <small>Activity</small>
-      </div>
-      <p class="mb-1">Starts: Sun 3:00pm</p>
-      <p class="mb-1">Ends: 4:00</p>
-      <p class="mb-1">Location: EC 116</p>
-   </a>
-</div>
-		</div>
+    </div>
 
-		<div id="challenges" class="jumbotron center">
+    <!--<div id="challenges" class="jumbotron center">
 			<h3>Challenges</h3>
 			<div class="list-group" id="challengeList">
 			</div>
-		</div>
+		</div>-->
 
-		<div id="map">
+    <div id="map"></div>
 
-		</div>
-		
-		<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
-		<script src="static/js/jquery.min.js"></script>
-		<script src="static/js/popper.min.js"></script>
-		<script src="static/js/bootstrap.min.js"></script>
-		<script src="static/js/live.js"></script>
-	</body>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/live.js"></script>
+  </body>
 </html>
